@@ -12,10 +12,11 @@ import torchmetrics
 import wandb
 from matplotlib import pyplot as plt
 from pytorch_lightning.loggers import WandbLogger
+from transformers import AutoTokenizer
+
 from src.comet_commonsense.src.data.utils import TextEncoder
 from src.models.keyword_base import KWComHumor
 from src.utils import ConstantLRwithWarmup
-from transformers import AutoTokenizer
 
 
 class LightningModel(pl.LightningModule):

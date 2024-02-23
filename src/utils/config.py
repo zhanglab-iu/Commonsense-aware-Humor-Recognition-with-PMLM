@@ -40,6 +40,7 @@ class Experiment:
     gradient_clip_val: Optional[Union[int, float]] = None
     ckpt: Optional[str] = None
     score: Optional[int] = None
+    undersampling: bool = False
     scheduler: bool = False
     warmup_step: int = 0
     cache_dir: Optional[str] = None
